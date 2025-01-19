@@ -1,0 +1,36 @@
+.partners{
+  background:var(--colorMain);
+  &__wrapper{
+    padding: 28.5px 0;
+  }
+  &__slider{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    gap: 8.333rem;
+  }
+  &__slide{
+    min-width: 12.333rem;
+    width: 12.333rem;
+    text-align: center;
+    img {
+      width: auto;
+      object-fit: scale-down;
+      max-width: 100%;
+    }
+  }
+  @media(max-width:1000px){
+    &__wrapper{
+      padding: 15px 0;
+    }
+    &__slider{
+      gap:83px;
+    }
+    &__slide{
+      max-width: 100px;
+      img{
+        max-height: 23px;
+      }
+    }
+  }
+}

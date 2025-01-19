@@ -45,3 +45,27 @@ body{
 		padding: 0 16px;
 	}
 }
+.section{
+	&__title{
+		font-family: var(--fontSecondary);
+		font-size: 3.8889rem;
+		line-height: 0.9em;
+		font-weight: 400;
+	}
+	@media(max-width:1000px){
+
+		&__title{
+			font-size: 42px;
+		}
+	}
+	@media(max-width:800px){
+		&__title{
+			font-size: 38px;
+		}
+	}
+	@media(max-width:600px){
+		&__title{
+			font-size: 32px;
+		}
+	}
+}
